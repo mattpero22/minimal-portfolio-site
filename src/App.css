@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'prime';
+    src: url('/public/font/Prime-Regular.ttf');
+}
+
+html {
+    --main-bg-color: #051014;
+
+    background-color: var(--main-bg-color);
+    color: #EBEBEB;
+    font-family: 'prime';
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    margin: 0px;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-tabs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#name {
+    margin: 0px;
+}
+
+.tab {
+    padding: 10px;
+}
