@@ -10,7 +10,7 @@ import Particles from './components/Particles';
 
 const App = () => {
   return (
-    <div className="App"> 
+    <div className="app"> 
       <Header> </Header>
       <Particles> </Particles>
     </div>
