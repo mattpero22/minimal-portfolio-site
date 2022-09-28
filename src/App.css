@@ -8,8 +8,12 @@ html {
     --main-font-color-dark: #EBEBEB;
     --active-font-color-1: #7C96EA;
 
-    background-color: var(--main-bg-color-dark);
-    color: var(--main-font-color-dark);
+    --main-bg-color-light: #EBEBEB;
+    --main-font-color-light: #202734;
+    --active-font-color-2: #334371;
+
+    background-color: var(--main-bg-color-light);
+    color: var(--main-font-color-light);
     font-family: 'prime';
 }
 
@@ -40,5 +44,5 @@ html {
 }
 
 .tab:hover {
-    color: var(--active-font-color-1);
+    color: var(--active-font-color-2);
 }

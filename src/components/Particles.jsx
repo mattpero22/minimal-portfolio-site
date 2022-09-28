@@ -7,37 +7,55 @@ import { useCallback, useMemo } from "react";
 const ParticlesComponent = () => {
     const options = useMemo(() => { return {
         particles: {
+            background: {
+                color: "#EBEBEB"
+            },
+            color: {
+                value: "#000000"
+            },
             fpsLimit: 60,
             fullScreen: {
                 enable: true,
-                zIndex: -1,
+                zIndex: 1,
             },
             interactivity: {
-
+                events: {
+                    onClick: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse"
+                    }
+                },
+                modes: {
+                    repulse: {
+                        radius: 100
+                    }
+                }
             },
             links: {
-                distance: 22,
+                color: {
+                    value: "#000000" 
+                },
+                distance: 12,
                 enable: true,
             },
             move: {
+                angle: {
+                    value: { min: 0, max: 1000}
+                },
                 direction: "none",
                 enable: true,
-                out_mode: "out",
-                random: false,
+                outModes: "destroy",
+                random: true,
                 straight: false,
-                speed: .15,
-                spin: {
-                    acceleration: .01,
-                    enable: true,
-                },
+                speed: { min: .1, max: .25},
                 warp: true,
             },
             number: {
-                value: 250,
-                density: {
-                    enable: true,
-                    value_area: 750
-                }
+                value: 500,
             },
             opacity: {
                 value: {min: .10, max: .90 }
