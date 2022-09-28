@@ -4,10 +4,12 @@
 }
 
 html {
-    --main-bg-color: #051014;
+    --main-bg-color-dark: #202734;
+    --main-font-color-dark: #EBEBEB;
+    --active-font-color-1: #7C96EA;
 
-    background-color: var(--main-bg-color);
-    color: #EBEBEB;
+    background-color: var(--main-bg-color-dark);
+    color: var(--main-font-color-dark);
     font-family: 'prime';
 }
 
@@ -29,4 +31,8 @@ html {
 
 .tab {
     padding: 10px;
+}
+
+.tab:hover {
+    color: var(--active-font-color-1);
 }
