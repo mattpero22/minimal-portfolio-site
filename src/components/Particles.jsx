@@ -20,26 +20,24 @@ const ParticlesComponent = () => {
                 enable: true,
             },
             move: {
-                distance: {
-                    horizontal: 1,
-                    vertical: 1000
-                },
+                direction: "none",
                 enable: true,
-                gravity: {
-                    enable: true
-                },
-                speed: { min: .1, max: .3},
+                out_mode: "out",
+                random: false,
+                straight: false,
+                speed: .15,
                 spin: {
                     acceleration: .01,
                     enable: true,
-                    position: {
-                        x: 50,
-                        y: 50
-                    }
                 },
+                warp: true,
             },
             number: {
-                value: 222
+                value: 250,
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
             },
             opacity: {
                 value: {min: .10, max: .90 }
@@ -58,7 +56,7 @@ const ParticlesComponent = () => {
             size: {
                 value: { min: .22, max: 2.2 }
             },
-        }
+        },
     } }, []);
 
     const particlesInit = useCallback((engine) => { loadSlim(engine); }, []);
