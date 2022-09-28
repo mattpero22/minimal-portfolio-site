@@ -11,7 +11,7 @@ const ParticlesComponent = () => {
                 color: "#EBEBEB"
             },
             color: {
-                value: "#000000"
+                value: "#202734"
             },
             fpsLimit: 60,
             fullScreen: {
@@ -39,7 +39,7 @@ const ParticlesComponent = () => {
                 color: {
                     value: "#000000" 
                 },
-                distance: 12,
+                distance: 22,
                 enable: true,
             },
             move: {
@@ -48,7 +48,7 @@ const ParticlesComponent = () => {
                 },
                 direction: "none",
                 enable: true,
-                outModes: "destroy",
+                outModes: "bounce",
                 random: true,
                 straight: false,
                 speed: { min: .1, max: .25},
