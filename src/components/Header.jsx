@@ -1,7 +1,10 @@
 const Header = () => {
     return (
         <div id='header'>
-            <h1 id='name'>MATT PERO</h1>
+            <div id='name'>
+                <h1 className='name'>MATT</h1>
+                <h1 className='name'>PERO</h1>
+            </div>
             <div id='header-tabs'>
                 <div id='about' className='tab'>ABOUT</div>
                 <div id='projects' className='tab'>PROJECTS</div>

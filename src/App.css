@@ -23,9 +23,10 @@ html {
 #header-tabs {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-#name {
+#name .name {
     margin: 0px;
 }
 
