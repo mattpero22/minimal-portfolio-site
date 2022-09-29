@@ -95,12 +95,9 @@ const ParticlesComponent = (props) => {
     } }, []);
 
     const particlesLoaded = (container) => {
-        console.log(currentTheme)
         currentTheme === "light" ? container.loadTheme("light") : container.loadTheme("dark")
-        
     }
 
-    
     return ( 
         <Particles init={particlesInit} loaded={particlesLoaded} options={options} />
     );
