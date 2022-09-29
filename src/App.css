@@ -11,11 +11,9 @@
 html {
     --main-bg-color-dark: #202734;
     --main-font-color-dark: #EBEBEB;
-    --active-font-color-1: #7C96EA;
 
     --main-bg-color-light: #EBEBEB;
     --main-font-color-light: #202734;
-    --active-font-color-2: #334371;
 
     font-family: 'prime';
 }
@@ -63,7 +61,7 @@ html {
 }
 
 .tab:hover {
-    color : var(--active-font-color-2);
+    color : var(--main-font-color-dark);
     transition: 1.5s;
     border: 2px solid var(--active-font-color-2);
     cursor: pointer;
