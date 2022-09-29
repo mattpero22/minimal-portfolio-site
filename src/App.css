@@ -68,3 +68,35 @@ html {
     border: 2px solid var(--active-font-color-2);
     cursor: pointer;
 }
+
+@media screen and (max-width: 320px) {
+    #header-tabs {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #header-tabs {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    #header-tabs {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 1440px) {
+    
+}
