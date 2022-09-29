@@ -30,11 +30,13 @@ html {
 .light {
     background-color: var(--main-bg-color-light);
     color: var(--main-font-color-light);
+    transition: 1.25s;
 }
 
 .dark {
     background-color: var(--main-bg-color-dark);
     color: var(--main-font-color-dark);
+    transition: 1.25s;
 }
 
 #header {

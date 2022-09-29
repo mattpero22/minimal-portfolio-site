@@ -26,7 +26,12 @@ const ParticlesComponent = (props) => {
             name: "light",
             options: {
                 particles: {
-                    color: FONT_COLOR_LIGHT
+                    color: FONT_COLOR_LIGHT,
+                    links: {
+                        enable: true,
+                        color: FONT_COLOR_LIGHT,
+                        distance: 22,
+                    }
                 },
             }
           },
@@ -34,8 +39,13 @@ const ParticlesComponent = (props) => {
             name: "dark",
             options: {
                 particles: {
-                    color: FONT_COLOR_DARK
-                },            
+                    color: FONT_COLOR_DARK,
+                    links: {
+                        enable: true,
+                        color: FONT_COLOR_DARK,
+                        distance: 22,
+                    }
+                },
             }
           },
         ],
@@ -43,24 +53,6 @@ const ParticlesComponent = (props) => {
             fullScreen: {
                 enable: true,
                 zIndex: -1,
-            },
-            interactivity: {
-                detectsOn: "window",
-                events: {
-                    onClick: {
-                        enable: true,
-                        mode: "repulse"
-                    },
-                    onHover: {
-                        enable: true,
-                        mode: "repulse"
-                    }
-                },
-                modes: {
-                    repulse: {
-                        radius: 100
-                    }
-                }
             },
             move: {
                 direction: "none",
