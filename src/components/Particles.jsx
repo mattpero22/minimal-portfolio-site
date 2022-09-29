@@ -2,23 +2,50 @@ import { Particles } from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { useCallback, useMemo } from "react";
 
+// const BG_COLOR_DARK = "#202734";
+const FONT_COLOR_DARK = "#EBEBEB";
+// const ACTIVE_FONT_COLOR_DARK = "#7C96EA";
+
+// const BG_COLOR_LIGHT = "#EBEBEB";
+const FONT_COLOR_LIGHT = "#202734";
+// const ACTIVE_FONT_COLOR_LIGHT = "#334371";
+
 //^^ REF https://particles.js.org/docs/classes/Options_Classes_Options.Options.html
 
-const ParticlesComponent = () => {
+const ParticlesComponent = (props) => {
+
+    const currentTheme = props.theme
+    
+    const particlesInit = useCallback((engine) => { 
+        loadSlim(engine);
+     }, []);
+    
     const options = useMemo(() => { return {
+        themes: [
+          {
+            name: "light",
+            options: {
+                particles: {
+                    color: FONT_COLOR_LIGHT
+                },
+            }
+          },
+          {
+            name: "dark",
+            options: {
+                particles: {
+                    color: FONT_COLOR_DARK
+                },            
+            }
+          },
+        ],
         particles: {
-            background: {
-                color: "#EBEBEB"
-            },
-            color: {
-                value: "#202734"
-            },
-            fpsLimit: 60,
             fullScreen: {
                 enable: true,
-                zIndex: 1,
+                zIndex: -1,
             },
             interactivity: {
+                detectsOn: "window",
                 events: {
                     onClick: {
                         enable: true,
@@ -34,13 +61,6 @@ const ParticlesComponent = () => {
                         radius: 100
                     }
                 }
-            },
-            links: {
-                color: {
-                    value: "#000000" 
-                },
-                distance: 22,
-                enable: true,
             },
             move: {
                 direction: "none",
@@ -74,10 +94,15 @@ const ParticlesComponent = () => {
         },
     } }, []);
 
-    const particlesInit = useCallback((engine) => { loadSlim(engine); }, []);
+    const particlesLoaded = (container) => {
+        console.log(currentTheme)
+        currentTheme === "light" ? container.loadTheme("light") : container.loadTheme("dark")
+        
+    }
 
+    
     return ( 
-        <Particles init={particlesInit} options={options} />
+        <Particles init={particlesInit} loaded={particlesLoaded} options={options} />
     );
 }
 

@@ -3,6 +3,11 @@
     src: url('/public/font/Prime-Regular.ttf');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     --main-bg-color-dark: #202734;
     --main-font-color-dark: #EBEBEB;
@@ -12,14 +17,24 @@ html {
     --main-font-color-light: #202734;
     --active-font-color-2: #334371;
 
-    background-color: var(--main-bg-color-light);
-    color: var(--main-font-color-light);
     font-family: 'prime';
 }
 
 .app {
     width: 100vw;
     height: 100vh;
+    margin: 0;
+    z-index: 1;
+}
+
+.light {
+    background-color: var(--main-bg-color-light);
+    color: var(--main-font-color-light);
+}
+
+.dark {
+    background-color: var(--main-bg-color-dark);
+    color: var(--main-font-color-dark);
 }
 
 #header {
