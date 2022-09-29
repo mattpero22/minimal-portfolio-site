@@ -41,8 +41,13 @@ html {
 
 .tab {
     padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
 }
 
 .tab:hover {
-    color: var(--active-font-color-2);
+    color : var(--active-font-color-2);
+    transition: 1.5s;
+    border: 2px solid var(--active-font-color-2);
+    cursor: pointer;
 }

@@ -43,9 +43,6 @@ const ParticlesComponent = () => {
                 enable: true,
             },
             move: {
-                angle: {
-                    value: { min: 0, max: 1000}
-                },
                 direction: "none",
                 enable: true,
                 outModes: "bounce",
