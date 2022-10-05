@@ -1,25 +1,28 @@
 //react hooks and npm packages
-import React from 'react';
+import React from "react";
 import { useState } from "react";
 
 //styles
-import './App.css';
+import "./App.css";
 
 //components
-import Header from './components/Header'
-import ParticlesComponent from './components/Particles';
-import Socials from './components/Socials';
-import ThemeToggle from './components/ThemeToggle';
+import Header from "./components/Header"
+import Main from "./components/Main"
+import ParticlesComponent from "./components/Particles";
+import Socials from "./components/Socials";
+import ThemeToggle from "./components/ThemeToggle";
 
 const App = () => {
 
   const [theme, setTheme] = useState("dark")
+  const [page, setPage] = useState("home")
 
   return (
     <div className={`app ${theme}`}>
       <ParticlesComponent theme={theme}> </ParticlesComponent>
-      <Header>  </Header>
+      <Header setPage={setPage}>  </Header>
       <ThemeToggle theme={theme} setTheme={setTheme}> </ThemeToggle>
+      <Main theme={theme} page={page} setPage={setPage}> </Main>
       <Socials theme={theme}> </Socials>
     </div>
   )

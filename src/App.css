@@ -45,7 +45,7 @@ html {
 
 #header {
     margin: 0px;
-    padding: 3%;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
     max-height: 15vh;
@@ -75,7 +75,7 @@ html {
 
 #socials {
     margin: 0px;
-    padding: 3%;
+    padding: 1%;
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
@@ -83,6 +83,14 @@ html {
 
 .social_icon {
     max-width: 48px;
+}
+
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
 }
 
 @media screen and (max-width: 320px) {

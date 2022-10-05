@@ -2,16 +2,19 @@ const Socials = (props) => {
     return (
         <div id="socials">
             <div id="github" className="tab">
-                <img className="social_icon" src={`./img/github-logo-${props.theme}-theme.png`} alt='github'></img>
+                <a href="https://github.com/mattpero22" target="_blank">
+                    <img className="social_icon" src={`./img/github-logo-${props.theme}-theme.png`} alt='github'></img>
+                </a>
             </div>
             <div id="linkedin" className="tab">
-                <img className="social_icon" src={`./img/linkedin-logo-${props.theme}-theme.png`} alt='linkedin'></img>
-            </div>
-            <div id="resume" className="tab">
-                <img className="social_icon" src={`./img/resume-logo-${props.theme}-theme.png`} alt='resume'></img>
+                <a href="https://www.linkedin.com/in/matthew-pero22/" target="_blank">
+                    <img className="social_icon" src={`./img/linkedin-logo-${props.theme}-theme.png`} alt='linkedin'></img>
+                </a>
             </div>
             <div id="email" className="tab">
-                <img className="social_icon" src={`./img/email-logo-${props.theme}-theme.png`} alt='email'></img>
+                <a href="" target="_blank">
+                    <img className="social_icon" src={`./img/email-logo-${props.theme}-theme.png`} alt='email'></img>
+                </a>
             </div>
         </div>
     );
