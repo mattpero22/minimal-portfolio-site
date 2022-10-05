@@ -23,6 +23,8 @@ html {
     height: 100vh;
     margin: 0;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .light {
@@ -37,11 +39,16 @@ html {
     transition: 1.25s;
 }
 
+#theme_switch {
+    width: 10%;
+}
+
 #header {
     margin: 0px;
     padding: 3%;
     display: flex;
     justify-content: space-between;
+    max-height: 15vh;
 }
 
 #header-tabs {
@@ -61,10 +68,17 @@ html {
 }
 
 .tab:hover {
-    color : var(--main-font-color-dark);
-    transition: 1.5s;
-    border: 2px solid var(--active-font-color-2);
+    scale: 1.25;
+    transition: .5s;
     cursor: pointer;
+}
+
+#socials {
+    margin: 0px;
+    padding: 3%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
 }
 
 @media screen and (max-width: 320px) {

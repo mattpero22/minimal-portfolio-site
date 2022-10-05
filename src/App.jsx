@@ -8,6 +8,7 @@ import './App.css';
 //components
 import Header from './components/Header'
 import ParticlesComponent from './components/Particles';
+import Socials from './components/Socials';
 import ThemeToggle from './components/ThemeToggle';
 
 const App = () => {
@@ -17,8 +18,9 @@ const App = () => {
   return (
     <div className={`app ${theme}`}>
       <ParticlesComponent theme={theme}> </ParticlesComponent>
-      <Header> </Header>
+      <Header>  </Header>
       <ThemeToggle theme={theme} setTheme={setTheme}> </ThemeToggle>
+      <Socials theme={theme}> </Socials>
     </div>
   )
 };
