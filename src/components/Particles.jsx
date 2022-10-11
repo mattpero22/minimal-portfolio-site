@@ -67,7 +67,7 @@ const ParticlesComponent = (props) => {
                 value: 500,
             },
             opacity: {
-                value: {min: .10, max: .90 }
+                value: {min: .10, max: .75 }
             },
             outModes: {
                 default: "destroy"

@@ -1,7 +1,10 @@
 const Home = (props) => {
     return (
-        <div id="home">
-            HOME DIV
+        <div id="page_tiles">
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
         </div>
     )
 }
