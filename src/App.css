@@ -41,8 +41,23 @@ html {
     transition: 1.25s;
 }
 
-#theme_switch {
-    width: 10%;
+#theme-toggle {
+    max-width: 64px;
+    margin-left: 1%;
+}
+
+#theme-toggle:hover {
+    animation: pulse 2s linear 0s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {scale: 1.0;}
+    25% {scale: 1.1;}
+    50% {scale: 1.0;}
+    75% {scale: .90;}
+    100% {scale: 1.0;}
+    
 }
 
 #header {
@@ -68,13 +83,10 @@ html {
 }
 
 #title {
-    padding-left: 25px;
-}
-
-#title {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 25px;
 }
 
 .tab {
@@ -122,6 +134,22 @@ html {
     padding: 50px;
     margin: 25px;
     border-radius: 10px;
+    animation: rotate-in 3s;
+}
+
+.tile:hover {
+    animation: rotate-out 1s;
+    cursor: pointer;
+}
+
+@keyframes rotate-in {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    0% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg);}
 }
 
 .tile_dark {

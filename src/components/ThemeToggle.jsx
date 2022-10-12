@@ -3,7 +3,7 @@ const ThemeToggle = (props) => {
         event.target.className === "dark" ? props.setTheme("light") : props.setTheme("dark")
     }
     return (
-        <button id="theme_switch" className={props.theme} onClick={handleTheme}> Change Theme </button>
+        <img id="theme-toggle" className={props.theme} onClick={handleTheme} src={`./img/theme-toggle-${props.theme}-theme.png`} alt='about'></img>
     )
 }
 
