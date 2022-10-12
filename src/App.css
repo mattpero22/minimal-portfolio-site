@@ -134,6 +134,10 @@ html {
     border: 1px solid var(--main-font-color-light);
 }
 
+.tile_logo {
+    max-width: 64px;
+}
+
 @media screen and (max-width: 320px) {
     #header-tabs {
         flex-direction: column;
