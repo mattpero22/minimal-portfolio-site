@@ -11,9 +11,11 @@
 html {
     --main-bg-color-dark: #202734;
     --main-font-color-dark: #EBEBEB;
+    --second-bg-color-dark: #2F394C;
 
     --main-bg-color-light: #EBEBEB;
     --main-font-color-light: #202734;
+    --second-bg-color-light: #D6D6D6;
 
     font-family: 'prime';
 }
@@ -102,8 +104,34 @@ html {
 
 #main {
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 80vh;
     padding: 1%;
+}
+
+#page_tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.tile_dark {
+    background-color: var(--second-bg-color-dark);
+    border: 1px solid var(--main-font-color-dark);
+}
+
+.tile_light {
+    background-color: var(--second-bg-color-light);
+    border: 1px solid var(--main-font-color-light);
 }
 
 @media screen and (max-width: 320px) {
