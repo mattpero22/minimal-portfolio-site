@@ -16,18 +16,20 @@ const App = () => {
 
   const [theme, setTheme] = useState("dark")
 
+  const [fade, setFade] = useState("fade_in")
+
   const [page, setPage] = useState("home")
   const PAGES = ["home", "about", "projects", "skills", "edu"]
   const handlePageSelect = (event) => {
     PAGES.includes(event.target.id) ? setPage(event.target.id) : setPage("home")
-}
+  }
 
   return (
     <div className={`app ${theme}`}>
       <ParticlesComponent theme={theme}> </ParticlesComponent>
       <Header page={page} setPage={setPage} pages={PAGES} pageSelect={handlePageSelect}>  </Header>
       <ThemeToggle theme={theme} setTheme={setTheme}> </ThemeToggle>
-      <Main theme={theme} page={page} setPage={setPage} pages={PAGES} pageSelect={handlePageSelect}> </Main>
+      <Main theme={theme} page={page} setPage={setPage} pages={PAGES} pageSelect={handlePageSelect} fade={fade} setFade={setFade}> </Main>
       <Socials theme={theme}> </Socials>
     </div>
   )

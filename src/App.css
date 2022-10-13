@@ -97,10 +97,12 @@ html {
     padding: 10px;
     border: 2px solid transparent;
     border-radius: 15px;
+    transform: scale(1.0);
+    transition: .5s;
 }
 
 .tab:hover {
-    scale: 1.25;
+    transform: scale(1.25);
     transition: .5s;
     cursor: pointer;
 }
@@ -126,6 +128,15 @@ html {
     padding: 1%;
 }
 
+#main > * {
+    animation: fade 1s linear;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 #page_tiles {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -138,23 +149,17 @@ html {
     padding: 50px;
     margin: 25px;
     border-radius: 10px;
-    animation: rotate-in 3s;
+    transform: scale(1.0);
+    transition: .5s;
 }
 
 .tile:hover {
-    animation: rotate-out 1s;
+    transform: scale(1.1);
+    transition: .25s;
+    border: 2px solid;
     cursor: pointer;
 }
 
-@keyframes rotate-in {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
-
-@keyframes rotate-out {
-    0% {transform: rotate(360deg);}
-    100% {transform: rotate(0deg);}
-}
 
 .tile_dark {
     background-color: var(--second-bg-color-dark);

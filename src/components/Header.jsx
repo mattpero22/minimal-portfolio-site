@@ -11,10 +11,10 @@ const Header = (props) => {
                 </div>
             </div>
             <div className="header-tabs">
-                <div id="about" className="tab">ABOUT</div>
-                <div id="projects" className="tab">PROJECTS</div>
-                <div id="skills" className="tab">SKILLS</div>
-                <div id="education" className="tab">EDUCATION</div>
+                <div id="about" className="tab" onClick={props.pageSelect}>ABOUT</div>
+                <div id="projects" className="tab" onClick={props.pageSelect}>PROJECTS</div>
+                <div id="skills" className="tab" onClick={props.pageSelect}>SKILLS</div>
+                <div id="edu" className="tab" onClick={props.pageSelect}>EDUCATION</div>
             </div>
         </div>
     );
