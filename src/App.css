@@ -60,7 +60,7 @@ html {
     
 }
 
-#header {
+.header {
     margin: 0px;
     padding: 1%;
     display: flex;
@@ -68,21 +68,25 @@ html {
     max-height: 15vh;
 }
 
-#header-tabs {
+.header-tabs {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#name_title {
+.name_title {
     display: flex;
 }
 
-#name .name {
+.fullname .name {
     margin: 0px;
 }
 
-#title {
+.fullname:hover {
+    cursor: pointer;
+}
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
