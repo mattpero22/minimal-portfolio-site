@@ -21,10 +21,10 @@ html {
 }
 
 .app {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    z-index: 1;
+    z-index: 0;
     display: flex;
     flex-direction: column;
 }
@@ -44,6 +44,7 @@ html {
 #theme-toggle {
     max-width: 64px;
     margin-left: 1%;
+    z-index: 0;
 }
 
 #theme-toggle:hover {
@@ -65,7 +66,9 @@ html {
     padding: 1%;
     display: flex;
     justify-content: space-between;
-    max-height: 15vh;
+    height: 10vh;
+    z-index: 2;
+    position: relative;
 }
 
 .header-tabs {
@@ -113,6 +116,7 @@ html {
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
+    z-index: 0;
 }
 
 .social_icon {
@@ -124,8 +128,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
     padding: 1%;
+    z-index: 0;
 }
 
 #main > * {
@@ -191,19 +195,18 @@ html {
     border: 1px solid var(--main-font-color-light);
 }
 
-.headshot {
-    width:25%;
-    max-width: 420px;
+.headshot { 
+    width: 22%;
     border-radius: 10px;
     margin: 20px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .blurb {
     max-width: 50%;
     padding: 20px;
     line-height: 1.5em;
-    z-index: 2;
+    z-index: 0;
     border-radius: 10px;
 }
 
@@ -228,6 +231,10 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .about_page {
+        flex-direction: column;
+        font-size: 12px;
+    }
     
 }
 
@@ -237,4 +244,10 @@ html {
 
 @media screen and (max-width: 1440px) {
     
+}
+
+@media screen and (min-width: 2560px) {
+    .blurb {
+        font-size: 28px;
+    }
 }
