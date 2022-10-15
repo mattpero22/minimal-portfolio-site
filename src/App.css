@@ -296,13 +296,38 @@ html {
 .skills_page {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     width: 90%
 }
 
 .skills_section {
-    width: 25%;
-    margin: 25px;
+    width: 33%;
+    margin: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_section > h3 {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.skill_icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_icon {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.wide {
+    width: 100px;
+    padding: 10px 0px
 }
 
 @media screen and (max-width: 375px) {

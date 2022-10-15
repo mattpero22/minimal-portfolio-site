@@ -10,7 +10,6 @@ import Header from "./components/Header"
 import Main from "./components/Main"
 import ParticlesComponent from "./components/Particles";
 import Socials from "./components/Socials";
-import ThemeToggle from "./components/ThemeToggle";
 
 const App = () => {
 

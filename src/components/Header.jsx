@@ -28,7 +28,7 @@ const Header = (props) => {
             </div>
             <div className="header_icons">
                 <ThemeToggle theme={props.theme} setTheme={props.setTheme}> </ThemeToggle>
-                <img className="menu_icon" onClick={handleMenu} src={`./img/menu-logo-${props.theme}-theme.png`}></img>
+                <img className="menu_icon" onClick={handleMenu} src={`./img/menu-logo-${props.theme}-theme.png`} alt="menu icon"></img>
             </div>
             {menu === "show_menu" ? menuTabsDiv : <></>}
         </div>
