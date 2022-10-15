@@ -22,8 +22,8 @@ const Header = (props) => {
                     <h1 id="home" className="name">MATT</h1>
                     <h1 id="home" className="name">PERO</h1>
                 </div>
-                <div className="title">
-                    <h2>SOFTWARE ENGINEER</h2>
+                <div>
+                    <h2 className="title">SOFTWARE ENGINEER</h2>
                 </div>
             </div>
             <div className="header_icons">
