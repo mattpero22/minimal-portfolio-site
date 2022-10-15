@@ -78,7 +78,7 @@ html {
 .header_icons {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: right;
     width: 20%;
 }
 
@@ -88,7 +88,6 @@ html {
     margin-right: 1%;
     transform: scale(1.0);
     transition: .5s;
-
 }
 
 .menu_icon:hover {
@@ -98,6 +97,7 @@ html {
 }
 
 .hide_menu {
+    animation: fade_out .5s linear;
     z-index: -2;
 }
 
@@ -106,6 +106,7 @@ html {
     right: 1%;
     top: 12vh;
     z-index: 2;
+    animation: fade .5s linear;
 }
 
 .menu_tabs {
@@ -166,6 +167,7 @@ html {
     padding: 1%;
     z-index: 0;
     min-height: 70vh;
+    width: 100vw;
     height: auto;
 }
 
@@ -176,6 +178,11 @@ html {
 @keyframes fade {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@keyframes fade_out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 #page_tiles {
@@ -237,6 +244,54 @@ html {
     border-radius: 10px;
 }
 
+.projects_page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+    width: 20%;
+    min-width: 250px;
+}
+
+.project_thumb {
+    height: 44%;
+    width: 50%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.project_thumb > img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    transform: scale(1.0);
+    transition: .5s;
+}
+
+.project_thumb > img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.project_desc {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @media screen and (max-width: 375px) {
     .name_title {
         font-size: 12px;
@@ -246,6 +301,9 @@ html {
         width: 30px;
         height: 30px;
     }
+    .headshot {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -253,9 +311,14 @@ html {
         padding: 30px;
         width: 32px;
     }
-
     .tile_logo {
-        width: 20px;
+        width: 32px;
+    }
+    .headshot {
+        width: 50%;
+    }
+    .project {
+        width: 50%;
     }
     
 }
@@ -265,18 +328,28 @@ html {
         flex-direction: column;
         font-size: 12px;
     }
+    .headshot, .project {
+        width: 33%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    
+    .project {
+        width: 33%;
+    }
 }
 
 @media screen and (max-width: 1440px) {
-    
+    .project {
+        width: 20%;
+    }
 }
 
 @media screen and (min-width: 2560px) {
-    .blurb {
+    .project {
+        width: 25%;
+    }
+    .blurb, .project_desc {
         font-size: 28px;
     }
 }

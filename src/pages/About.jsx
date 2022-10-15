@@ -1,6 +1,6 @@
 const About = (props) => {
     return (
-        <div className={`about_page`}>
+        <div className="about_page">
             <img className={`headshot bg_${props.theme}`} src="https://i.imgur.com/PjKN4sJ.jpg" alt="headshot"></img>
             <div className={`blurb bg_${props.theme}`}>
                 <p>

@@ -11,11 +11,11 @@ const Socials = (props) => {
                     <img className="social_icon" src={`./img/linkedin-logo-${props.theme}-theme.png`} alt='linkedin'></img>
                 </a>
             </div>
-            <div id="email" className="tab">
+            {/* <div id="email" className="tab">
                 <a href="" target="_blank">
                     <img className="social_icon" src={`./img/email-logo-${props.theme}-theme.png`} alt='email'></img>
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 }
