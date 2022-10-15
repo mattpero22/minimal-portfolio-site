@@ -27,8 +27,8 @@ const App = () => {
   return (
     <div className={`app ${theme}`}>
       <ParticlesComponent theme={theme}> </ParticlesComponent>
-      <Header page={page} setPage={setPage} pages={PAGES} pageSelect={handlePageSelect}>  </Header>
-      <ThemeToggle theme={theme} setTheme={setTheme}> </ThemeToggle>
+      <Header theme={theme} setTheme={setTheme} page={page} setPage={setPage} pages={PAGES} pageSelect={handlePageSelect}>  </Header>
+      {/* <ThemeToggle theme={theme} setTheme={setTheme}> </ThemeToggle> */}
       <Main theme={theme} page={page} setPage={setPage} pages={PAGES} pageSelect={handlePageSelect} fade={fade} setFade={setFade}> </Main>
       <Socials theme={theme}> </Socials>
     </div>

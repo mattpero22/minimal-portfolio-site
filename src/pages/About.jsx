@@ -1,8 +1,8 @@
 const About = (props) => {
     return (
         <div className={`about_page`}>
-            <img className={`headshot about_${props.theme}`} src="https://i.imgur.com/PjKN4sJ.jpg" alt="headshot"></img>
-            <div className={`blurb about_${props.theme}`}>
+            <img className={`headshot bg_${props.theme}`} src="https://i.imgur.com/PjKN4sJ.jpg" alt="headshot"></img>
+            <div className={`blurb bg_${props.theme}`}>
                 <p>
                     I am Matt Pero, a software engineer transitioning from mechanical engineering.
                     Towards the end of my four year engineering degree, I fell in love with computer programming while modeling FEA and dynamic system reactions.
