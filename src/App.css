@@ -293,6 +293,18 @@ html {
     align-items: center;
 }
 
+.skills_page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%
+}
+
+.skills_section {
+    width: 25%;
+    margin: 25px;
+}
+
 @media screen and (max-width: 375px) {
     .name_title {
         font-size: 12px;
