@@ -406,6 +406,15 @@ html {
     .skills_section {
         width: 45%;
     }
+    .school_info{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    .school_info{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 1024px) {
